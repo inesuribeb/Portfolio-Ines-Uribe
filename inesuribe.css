@@ -1,0 +1,377 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: #f4f4f4;
+}
+
+html, body {
+    margin: 0; 
+    height: 100%; 
+    background-color: #f4f4f4;
+    flex-direction: column;
+    display: flex;
+    padding-top: 40px;
+}
+
+header{
+    height: 10vh; 
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 10px;
+    background-color: #f4f4f4;
+}
+
+footer {
+    background-color: #f4f4f4; 
+    padding: 10px; 
+    text-align: left; 
+}
+
+
+.contenedor {
+    display: flex; 
+    height: 100%; 
+}
+    
+.encabezado, .navegador {
+        flex: 1; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        padding: 15px; 
+        background-color: transparent;
+}
+    
+.encabezado {
+        color: black; 
+        justify-content: flex-start;
+        padding: 20px;
+        background-color: transparent;
+    }
+a {
+        text-decoration: none; 
+        color: inherit; 
+    }
+    
+h1 {
+        font-family: 'Times New Roman'; 
+        font-size: 15px; 
+        text-transform: uppercase; 
+        font-weight: 300;
+        letter-spacing: 0.30em;
+}
+    
+    
+    .navegador {
+        color: black; 
+        justify-content: flex-end;
+        font-size: 15px;
+        font-family: 'Times New Roman';
+        letter-spacing: 0.30em; 
+        
+    }
+    nav ul {
+        display: flex; 
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
+    
+    }
+    
+    nav li {
+        margin-right: 20px; 
+      
+        
+    }
+    
+    nav li:last-child {
+        margin-right: 0; 
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: black; 
+        
+    }
+
+
+
+
+
+    @media (max-width: 768px) {
+        body {
+            padding-top: 80px; 
+        }
+    
+        header {
+            height: 15vh; 
+        }
+    
+        h1 {
+            font-size: 12px; 
+            letter-spacing: 0.15em; 
+        }
+    
+        .navegador {
+            font-size: 12px; 
+        }
+    
+        nav ul {
+            flex-direction: column; 
+            padding: 0; 
+        }
+    
+        nav li {
+            margin-bottom: 10px; 
+            margin-right: 0; 
+        }
+    }
+
+  
+/*WORK*/ 
+.mensajeInicio {
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.texto {
+    text-align: center;
+    margin-top: 200px;
+    letter-spacing: 0.10em;
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contentContainer {
+        display: flex; 
+        width: 100%; 
+        gap: 5px;
+        padding-top: 290px;
+    }
+
+    .column1, .column2, .column3 {
+        flex: 15px; 
+        padding: 5px;
+    }
+    .column1 img,
+    .column2 img,
+    .column3 img {
+        width: 100%; 
+        height: auto; 
+        margin: 5px;
+    }
+
+@media (max-width: 768px) {
+    .mensajeInicio {
+        display: none;
+    }
+
+    .contentContainer {
+        flex-direction: column; 
+        padding-top: 100px; 
+    }
+
+    .column1, .column2, .column3 {
+        flex: 1; 
+    }
+
+    .texto {
+        margin-top: 50px; 
+        font-size: 1.2em; 
+    }
+}
+
+
+/*CONTACT*/ 
+
+main.contactame {
+    font-family: 'Times New Roman'; /* Tipografía general */
+    background-color: #f4f4f4; /* Color de fondo */
+    display: flex; /* Usar flexbox para centrar el formulario */
+    flex-direction: column; /* Coloca el contenido en columnas */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin: 0; /* Eliminar márgenes por defecto */
+    flex: 1; 
+    padding-top: 40px;
+}
+
+
+.formulario {
+    background-color: #f4f4f4; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    width: 60%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    
+}
+
+fieldset {
+    border: none; 
+    padding: 0; 
+    width: 100%;
+}
+
+legend {
+    font-size: 1.0em; 
+    margin-bottom: 20px; 
+    text-align: center;
+    text-transform: uppercase; 
+    letter-spacing: 0.30em;
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px; 
+    text-align: center;
+    letter-spacing: 0.10em;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    text-align: left;
+}
+
+
+button {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: #540d0d; 
+    color: white; 
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+    width: 100%; 
+    max-width: none; 
+
+}
+
+button:hover {
+    background-color: #daa2b1; 
+}
+
+@media (max-width: 768px) {
+    main.contactame {
+        padding-top: 20px; 
+        padding: 10px; 
+    }
+
+    
+    input, textarea, button {
+        width: 100%; 
+        margin-bottom: 10px; 
+        font-size: 14px; 
+        padding: 10px; 
+    }
+}
+
+
+
+
+/*BIO*/ 
+
+main.cuerpoBio {
+    display: flex; 
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+.imagenPresentacion {
+    display: flex;
+    width: 40%;
+    margin-top: 80px;
+    background-color: #f4f4f4;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    padding: 0px;
+
+}
+
+
+
+.imagenPresentacion img{
+    max-width: 80%;
+    height: auto; 
+    display: block;
+    object-fit: contain;
+}
+
+
+.presentacion {
+    display: flex;
+    width: 60%;
+    margin-top: 60px;
+    flex-direction: column;
+    padding: 20px;
+}
+.textoPresentacionSaludo {
+    display: flex;
+    width:100%;
+    object-fit: contain;
+    overflow: hidden;
+    padding-top: 10%;
+    text-transform: uppercase;
+    letter-spacing: 0.10em;
+    font-family: 'Courier New';
+    font-size: 13px;
+}
+.textoQuienSoy {
+    display: flex;
+    width:100%;
+    object-fit: contain;
+    overflow: hidden;
+    padding: 5%;
+    font-size: 13px; 
+    font-weight: 300;
+    letter-spacing: 0.10em;
+    text-align: justify;
+    line-height: 1.5;
+    padding-right: 15%;
+    font-family: 'Courier New';
+}
+
+@media (max-width: 768px) {
+    main.cuerpoBio {
+        flex-direction: column; 
+    }
+
+    .imagenPresentacion {
+        width: 100%; 
+        margin-top: 20px; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .presentacion {
+        width: 100%; 
+        margin-top: 20px; 
+    }
+
+    .textoPresentacionSaludo,
+    .textoQuienSoy {
+        padding: 0; 
+        font-size: 12px; 
+    }
+}

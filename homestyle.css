@@ -1,0 +1,71 @@
+
+body {
+    margin: 0; 
+    padding: 0; 
+    height: 100vh; 
+}
+
+.fondo {
+    background-image: url(CAPTURAS/fondohome.png); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: white; 
+    position: relative;
+}
+
+.h1{
+    
+    position: absolute;
+    top: 75%; 
+    left: 20%; 
+}
+
+.h1 a {
+    color: rgb(208,45,28); 
+    text-decoration: none; 
+    letter-spacing: 0.10em;
+    font-size: 170%;
+    font-family: 'BLUE OCEAN';
+    transition: color 0.3s ease; 
+    animation: fadeIn 2s ease-in-out infinite;
+}
+
+.h1 a:hover {
+    color: black;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0.6; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0.6; }
+}
+
+@font-face {
+    font-family: "BLUE OCEAN";
+    src: url('fonts/BLUE\ OCEAN.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .fondo {
+        background-image: url(CAPTURAS/FONDOMOVIL.png); 
+    }
+
+    .h1 {
+        top: 50%; 
+        left: 10%; 
+        text-align: center; 
+    }
+
+    .h1 a {
+        font-size: 120%; 
+    }
+}
